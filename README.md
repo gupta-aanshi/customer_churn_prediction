@@ -108,9 +108,6 @@ psql -d customer_behavior_and_revenue_intelligence_system -f business_analysis.s
 - Creating a workflow where SQL queries can JOIN with ML predictions
 - Realizing 99% accuracy doesn't mean much with synthetic data 😅
 
-**Biggest "Aha":**
-ML predictions sitting in a Jupyter notebook aren't useful - you need to get them into your data system where people can actually query and use them!
-
 ## Sample Queries You Can Run:
 
 Once everything's set up, try these:
