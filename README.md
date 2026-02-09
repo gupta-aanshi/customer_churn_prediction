@@ -130,7 +130,7 @@ JOIN customer_churn_predictions p USING(customer_id)
 GROUP BY city;
 ```
 
-See `business_analysis.sql` for 18 more queries!
+See `business_analysis.sql` for more queries!
 
 ## Project Structure:
 
