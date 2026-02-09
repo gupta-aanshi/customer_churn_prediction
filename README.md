@@ -1,8 +1,8 @@
-# Customer Churn Prediction - SQL + ML Integration Project
+# Customer Churn Prediction - SQL + ML Integration Project:
 
 A learning project exploring how to integrate machine learning predictions with SQL databases. Built this to understand the complete workflow from database → ML model → predictions back to database.
 
-## What This Does
+## What This Does?
 
 This project connects SQL and Python/ML in a real workflow:
 
@@ -13,7 +13,7 @@ This project connects SQL and Python/ML in a real workflow:
 
 The main goal was learning how these pieces integrate, not building a perfect ML model.
 
-## Why I Built This
+## Why I Built This?
 
 I wanted to understand:
 - How to properly connect Python and SQL (not just read, but write back too!)
@@ -22,7 +22,7 @@ I wanted to understand:
 - Feature engineering directly in SQL
 - The full workflow from data → model → insights
 
-## Project Files
+## Project Files:
 
 ```
 ├── database_setup.sql           # Creates tables, generates sample data
@@ -31,7 +31,7 @@ I wanted to understand:
 └── README.md                    # You're here!
 ```
 
-## Data
+## Data:
 
 **Important: All data is synthetic/fake!** 
 
@@ -51,14 +51,14 @@ The `database_setup.sql` script automatically generates:
 
 If you want to use your own data, just modify the `customer_ml_features` table structure to match your schema.
 
-## Tech Stack
+## Tech Stack:
 
 - **PostgreSQL** - Database (first time setting up from scratch!)
 - **Python** - pandas, scikit-learn, SQLAlchemy, psycopg2
 - **Jupyter Notebook** - Interactive development
 - **Logistic Regression** - Simple enough to understand while learning
 
-## Quick Start
+## Quick Start:
 
 ### 1. Setup Database
 ```bash
@@ -91,7 +91,7 @@ psql -d customer_behavior_and_revenue_intelligence_system -f business_analysis.s
 # Or run individual queries in your SQL client
 ```
 
-## Key Learning Moments
+## Key Learning Moments:
 
 **Python-SQL Integration:**
 - Figured out SQLAlchemy vs psycopg2 (when to use each)
@@ -111,7 +111,7 @@ psql -d customer_behavior_and_revenue_intelligence_system -f business_analysis.s
 **Biggest "Aha":**
 ML predictions sitting in a Jupyter notebook aren't useful - you need to get them into your data system where people can actually query and use them!
 
-## Sample Queries You Can Run
+## Sample Queries You Can Run:
 
 Once everything's set up, try these:
 
@@ -135,7 +135,7 @@ GROUP BY city;
 
 See `business_analysis.sql` for 18 more queries!
 
-## Project Structure
+## Project Structure:
 
 **Database Schema:**
 - `customers` - Customer profiles
@@ -151,7 +151,7 @@ See `business_analysis.sql` for 18 more queries!
 - Model: Logistic Regression (simple, interpretable)
 - Accuracy: ~99% (but data is synthetic and pattern is obvious)
 
-## Known Issues
+## Known Issues:
 
 Being honest about what needs work:
 - Database password hardcoded in notebook (need to use environment variables)
@@ -160,17 +160,16 @@ Being honest about what needs work:
 - Code in notebook could be cleaner (some cells do too much)
 - Only tried one ML model - should compare others
 
-## What's Next
+## What's Next?
 
 If I keep working on this:
 - Add a simple Flask/Streamlit dashboard
 - Try Random Forest and compare performance
-- Automate the retraining pipeline
 - Add real-time prediction endpoint
 - Better feature engineering (seasonality, product preferences)
 - Learn about actual ML deployment
 
-## Resources That Helped
+## Resources That Helped:
 
 - PostgreSQL docs (dry but complete)
 - Scikit-learn tutorials
